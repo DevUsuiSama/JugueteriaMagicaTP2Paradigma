@@ -72,8 +72,7 @@ tp2-paradigma
 ---
 
 ## 📥 Documentos de Análisis y Diseño
-- [📄 Trabajo Práctico Nº 1](public/pdf/_Trabajo%20Práctico%20Nº%201%20-%20Usui.pdf)  
-- [📄 Trabajo Práctico Nº 2](public/pdf/_Trabajo%20Práctico%20Nº%202%20-%20Usui.pdf)  
+- [📄 Trabajo Práctico Nº 2](public/pdf/_trabajopracticonro2.pdf)  
 
 ---
 
