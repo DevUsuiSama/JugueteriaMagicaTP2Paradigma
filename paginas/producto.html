@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Mágica - Auto de Juguete</title>
+    <link rel="shortcut icon" href="../public/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/componentes.css">
+    <link rel="stylesheet" href="../public/css/productos.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedor cabecera__contenido">
+            <h1 class="cabecera__titulo">Juguetería Mágica</h1>
+            <nav class="cabecera__navegacion">
+                <a href="../index.html" class="cabecera__enlace">Inicio</a>
+                <a href="listado_tabla.html" class="cabecera__enlace">Tabla</a>
+                <a href="listado_box.html" class="cabecera__enlace">Cajas</a>
+                <a href="producto.html" class="cabecera__enlace">Producto</a>
+                <a href="comprar.html" class="cabecera__enlace">Comprar</a>
+            </nav>
+            <div class="controles-tema">
+                <button class="boton-tema" id="botonTema" aria-label="Cambiar tema">
+                    <span id="iconoTema">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal contenedor">
+        <h2 class="principal__titulo">Ficha del Producto</h2>
+
+        <article class="detalle-producto">
+            <div class="detalle-producto__imagen">
+                <img src="../public/img/car.png" alt="Auto de juguete rojo con luces y sonido"
+                    style="max-width: 400px;">
+            </div>
+
+            <div class="detalle-producto__info">
+                <h3 class="detalle-producto__titulo">Auto de Juguete Deportivo</h3>
+                <p class="detalle-producto__descripcion">
+                    Este increíble auto deportivo a control remoto es perfecto para los amantes de la velocidad.
+                    Cuenta con luces LED frontales y traseras, sonido realista de motor y capacidad de giro de 360°.
+                </p>
+
+                <div class="detalle-producto__caracteristicas">
+                    <h4>Características:</h4>
+                    <ul>
+                        <li>Control remoto incluido</li>
+                        <li>Luces LED multicolor</li>
+                        <li>Sonido realista</li>
+                        <li>Giro de 360 grados</li>
+                        <li>Batería recargable</li>
+                        <li>Edad recomendada: 6+ años</li>
+                    </ul>
+                </div>
+
+                <p class="detalle-producto__precio">Precio: $1500</p>
+
+                <p>Stock: <span class="detalle-producto__stock detalle-producto__stock--disponible">Disponible</span>
+                </p>
+
+                <div class="acciones-producto" style="margin-top: 2rem;">
+                    <button class="boton-formulario" onclick="location.href='comprar.html'"
+                        style="margin-bottom: 1rem;">
+                        Comprar Ahora
+                    </button>
+                    <button class="boton-formulario" onclick="agregarAlCarrito()"
+                        style="background: var(--color-secundario);">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <section class="productos-relacionados" style="margin-top: 3rem;">
+            <h3 class="principal__titulo">Productos Relacionados</h3>
+            <div class="listado-cajas">
+                <div class="caja-producto">
+                    <h4 class="caja-producto__titulo">Camión de Juguete</h4>
+                    <p class="caja-producto__precio">$2100</p>
+                    <p class="caja-producto__descripcion">Camión volcador a control remoto</p>
+                </div>
+                <div class="caja-producto">
+                    <h4 class="caja-producto__titulo">Moto de Carreras</h4>
+                    <p class="caja-producto__precio">$1300</p>
+                    <p class="caja-producto__descripcion">Moto deportiva con efectos de sonido</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>&copy; 2024 Juguetería Mágica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../public/js/tema.js"></script>
+    <script src="../public/js/main.js"></script>
+    <script>
+        function agregarAlCarrito() {
+            alert('¡Producto agregado al carrito!');
+        }
+    </script>
+</body>
+
+</html>

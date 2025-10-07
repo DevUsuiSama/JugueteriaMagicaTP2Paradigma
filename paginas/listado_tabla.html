@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Mágica - Listado en Tabla</title>
+    <link rel="shortcut icon" href="../public/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/componentes.css">
+    <link rel="stylesheet" href="../public/css/productos.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedor cabecera__contenido">
+            <h1 class="cabecera__titulo">Juguetería Mágica</h1>
+            <nav class="cabecera__navegacion">
+                <a href="../index.html" class="cabecera__enlace">Inicio</a>
+                <a href="listado_tabla.html" class="cabecera__enlace">Tabla</a>
+                <a href="listado_box.html" class="cabecera__enlace">Cajas</a>
+                <a href="producto.html" class="cabecera__enlace">Producto</a>
+                <a href="comprar.html" class="cabecera__enlace">Comprar</a>
+            </nav>
+            <div class="controles-tema">
+                <button class="boton-tema" id="botonTema" aria-label="Cambiar tema">
+                    <span id="iconoTema">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal contenedor">
+        <h2 class="principal__titulo">Listado en Tabla</h2>
+
+        <table class="tabla">
+            <thead class="tabla__cabecera">
+                <tr>
+                    <th class="tabla__celda-cabecera">Producto</th>
+                    <th class="tabla__celda-cabecera">Precio</th>
+                    <th class="tabla__celda-cabecera">Stock</th>
+                    <th class="tabla__celda-cabecera">Categoría</th>
+                    <th class="tabla__celda-cabecera">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tabla__fila">
+                    <td class="tabla__celda">Auto de Juguete</td>
+                    <td class="tabla__celda">$1500</td>
+                    <td class="tabla__celda tabla__celda--disponible">Disponible</td>
+                    <td class="tabla__celda">Vehículos</td>
+                    <td class="tabla__celda">
+                        <button class="boton-formulario" onclick="location.href='producto.html'"
+                            style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            Ver
+                        </button>
+                    </td>
+                </tr>
+                <tr class="tabla__fila">
+                    <td class="tabla__celda">Muñeca Articulada</td>
+                    <td class="tabla__celda">$2300</td>
+                    <td class="tabla__celda tabla__celda--disponible">Disponible</td>
+                    <td class="tabla__celda">Muñecas</td>
+                    <td class="tabla__celda">
+                        <button class="boton-formulario" onclick="location.href='producto.html'"
+                            style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            Ver
+                        </button>
+                    </td>
+                </tr>
+                <tr class="tabla__fila">
+                    <td class="tabla__celda">Set de Construcción</td>
+                    <td class="tabla__celda">$1800</td>
+                    <td class="tabla__celda tabla__celda--disponible">Disponible</td>
+                    <td class="tabla__celda">Construcción</td>
+                    <td class="tabla__celda">
+                        <button class="boton-formulario" onclick="location.href='producto.html'"
+                            style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            Ver
+                        </button>
+                    </td>
+                </tr>
+                <tr class="tabla__fila">
+                    <td class="tabla__celda">Juego de Mesa</td>
+                    <td class="tabla__celda">$3200</td>
+                    <td class="tabla__celda tabla__celda--no-disponible">Agotado</td>
+                    <td class="tabla__celda">Juegos</td>
+                    <td class="tabla__celda">
+                        <button class="boton-formulario" onclick="location.href='producto.html'"
+                            style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            Ver
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>&copy; 2024 Juguetería Mágica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../public/js/tema.js"></script>
+    <script src="../public/js/main.js"></script>
+</body>
+
+</html>

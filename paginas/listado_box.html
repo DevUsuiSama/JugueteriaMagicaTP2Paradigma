@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Mágica - Listado en Cajas</title>
+    <link rel="shortcut icon" href="../public/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/componentes.css">
+    <link rel="stylesheet" href="../public/css/productos.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedor cabecera__contenido">
+            <h1 class="cabecera__titulo">Juguetería Mágica</h1>
+            <nav class="cabecera__navegacion">
+                <a href="../index.html" class="cabecera__enlace">Inicio</a>
+                <a href="listado_tabla.html" class="cabecera__enlace">Tabla</a>
+                <a href="listado_box.html" class="cabecera__enlace">Cajas</a>
+                <a href="producto.html" class="cabecera__enlace">Producto</a>
+                <a href="comprar.html" class="cabecera__enlace">Comprar</a>
+            </nav>
+            <div class="controles-tema">
+                <button class="boton-tema" id="botonTema" aria-label="Cambiar tema">
+                    <span id="iconoTema">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal contenedor">
+        <h2 class="principal__titulo">Listado en Cajas</h2>
+
+        <div class="listado-cajas">
+            <div class="caja-producto">
+                <div class="detalle-producto__imagen" style="margin-bottom: 20px;">
+                    <img src="../public/img/car.png" alt="Auto de juguete rojo con luces y sonido">
+                </div>
+                <h3 class="caja-producto__titulo">Auto de Juguete</h3>
+                <p class="caja-producto__precio">Precio: $1500</p>
+                <p class="caja-producto__descripcion">Auto a control remoto color rojo con luces LED</p>
+                <button class="boton-formulario" onclick="location.href='producto.html'">Ver Detalles</button>
+            </div>
+
+            <div class="caja-producto">
+                <div class="detalle-producto__imagen" style="margin-bottom: 20px;">
+                    <img src="../public/img/car.png" alt="Auto de juguete rojo con luces y sonido">
+                </div>
+                <h3 class="caja-producto__titulo">Muñeca Articulada</h3>
+                <p class="caja-producto__precio">Precio: $2300</p>
+                <p class="caja-producto__descripcion">Muñeca con 10 puntos de articulación y accesorios</p>
+                <button class="boton-formulario" onclick="location.href='producto.html'">Ver Detalles</button>
+            </div>
+
+            <div class="caja-producto">
+                <div class="detalle-producto__imagen" style="margin-bottom: 20px;">
+                    <img src="../public/img/car.png" alt="Auto de juguete rojo con luces y sonido">
+                </div>
+                <h3 class="caja-producto__titulo">Set de Construcción</h3>
+                <p class="caja-producto__precio">Precio: $1800</p>
+                <p class="caja-producto__descripcion">125 piezas para construir diferentes modelos</p>
+                <button class="boton-formulario" onclick="location.href='producto.html'">Ver Detalles</button>
+            </div>
+
+            <div class="caja-producto">
+                <div class="detalle-producto__imagen" style="margin-bottom: 20px;">
+                    <img src="../public/img/car.png" alt="Auto de juguete rojo con luces y sonido">
+                </div>
+                <h3 class="caja-producto__titulo">Juego de Mesa Familiar</h3>
+                <p class="caja-producto__precio">Precio: $3200</p>
+                <p class="caja-producto__descripcion">Divertido juego para toda la familia, 2-6 jugadores</p>
+                <button class="boton-formulario" onclick="location.href='producto.html'">Ver Detalles</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>&copy; 2024 Juguetería Mágica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../public/js/tema.js"></script>
+    <script src="../public/js/main.js"></script>
+</body>
+
+</html>

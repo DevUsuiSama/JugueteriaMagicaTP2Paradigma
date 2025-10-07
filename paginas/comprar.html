@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Mágica - Comprar</title>
+    <link rel="shortcut icon" href="../public/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/componentes.css">
+    <link rel="stylesheet" href="../public/css/compra.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="contenedor cabecera__contenido">
+            <h1 class="cabecera__titulo">Juguetería Mágica</h1>
+            <nav class="cabecera__navegacion">
+                <a href="../index.html" class="cabecera__enlace">Inicio</a>
+                <a href="listado_tabla.html" class="cabecera__enlace">Tabla</a>
+                <a href="listado_box.html" class="cabecera__enlace">Cajas</a>
+                <a href="producto.html" class="cabecera__enlace">Producto</a>
+                <a href="comprar.html" class="cabecera__enlace">Comprar</a>
+            </nav>
+            <div class="controles-tema">
+                <button class="boton-tema" id="botonTema" aria-label="Cambiar tema">
+                    <span id="iconoTema">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal contenedor">
+        <h2 class="principal__titulo">Formulario de Compra</h2>
+
+        <div class="resumen-compra">
+            <h3 class="resumen-compra__titulo">Resumen de tu Compra</h3>
+            <ul class="resumen-compra__lista">
+                <li class="resumen-compra__item">
+                    <span>Auto de Juguete Deportivo</span>
+                    <span>$1500</span>
+                </li>
+                <li class="resumen-compra__item">
+                    <span>Envío estándar</span>
+                    <span>$500</span>
+                </li>
+            </ul>
+            <div class="resumen-compra__total">
+                <span>Total</span>
+                <span>$2000</span>
+            </div>
+        </div>
+
+        <form class="formulario" id="formularioCompra">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <div class="grupo-formulario">
+                    <label class="etiqueta-formulario">
+                        Nombre completo *
+                        <input type="text" name="nombre" class="entrada-formulario" required
+                            placeholder="Ingresa tu nombre completo">
+                    </label>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label class="etiqueta-formulario">
+                        Dirección de envío *
+                        <input type="text" name="direccion" class="entrada-formulario" required
+                            placeholder="Ingresa tu dirección completa">
+                    </label>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label class="etiqueta-formulario">
+                        Teléfono *
+                        <input type="tel" name="telefono" class="entrada-formulario" required
+                            placeholder="Ej: 11-1234-5678">
+                    </label>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label class="etiqueta-formulario">
+                        Email *
+                        <input type="email" name="email" class="entrada-formulario" required placeholder="tu@email.com">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Método de Pago</legend>
+
+                <div class="grupo-formulario">
+                    <label class="etiqueta-formulario">
+                        Medio de pago *
+                        <select name="pago" class="seleccion-formulario" required>
+                            <option value="">Selecciona un medio de pago</option>
+                            <option value="tarjeta">Tarjeta de crédito/débito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                            <option value="mercadopago">MercadoPago</option>
+                            <option value="efectivo">Efectivo en entrega</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="grupo-formulario" id="datosTarjeta" style="display: none;">
+                    <label class="etiqueta-formulario">
+                        Número de tarjeta
+                        <input type="text" name="numeroTarjeta" class="entrada-formulario"
+                            placeholder="1234 5678 9012 3456">
+                    </label>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <label class="etiqueta-formulario">
+                            Fecha vencimiento
+                            <input type="text" name="vencimiento" class="entrada-formulario" placeholder="MM/AA">
+                        </label>
+                        <label class="etiqueta-formulario">
+                            CVV
+                            <input type="text" name="cvv" class="entrada-formulario" placeholder="123">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Adicional</legend>
+
+                <div class="grupo-formulario">
+                    <label class="etiqueta-formulario">
+                        Productos solicitados *
+                        <textarea name="productos" class="textarea-formulario" required
+                            placeholder="Describe los productos que deseas comprar, cantidades, colores, etc.">Auto de Juguete Deportivo - 1 unidad</textarea>
+                    </label>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label class="etiqueta-formulario">
+                        Instrucciones especiales para la entrega
+                        <textarea name="instrucciones" class="textarea-formulario"
+                            placeholder="Alguna instrucción especial para el envío..."></textarea>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="grupo-formulario">
+                <label class="etiqueta-formulario" style="flex-direction: row; align-items: center; gap: 0.5rem;">
+                    <input type="checkbox" name="terminos" required>
+                    <span>Acepto los términos y condiciones de compra *</span>
+                </label>
+            </div>
+
+            <button type="submit" class="boton-formulario">Confirmar Compra</button>
+        </form>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>&copy; 2024 Juguetería Mágica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../public/js/tema.js"></script>
+    <script src="../public/js/validacion-formulario.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const selectPago = document.querySelector('select[name="pago"]');
+            const datosTarjeta = document.getElementById('datosTarjeta');
+
+            selectPago.addEventListener('change', function () {
+                if (this.value === 'tarjeta') {
+                    datosTarjeta.style.display = 'block';
+
+                    document.querySelectorAll('#datosTarjeta input').forEach(input => {
+                        input.required = true;
+                    });
+                } else {
+                    datosTarjeta.style.display = 'none';
+
+                    document.querySelectorAll('#datosTarjeta input').forEach(input => {
+                        input.required = false;
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="../public/js/main.js"></script>
+</body>
+
+</html>

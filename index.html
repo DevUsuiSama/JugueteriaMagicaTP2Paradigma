@@ -3,27 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Juguetería Mágica</title>
-    <link rel="shortcut icon" href="public/icon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Mágica - Inicio</title>
+    <link rel="shortcut icon" href="public/iconos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="public/css/componentes.css">
+    <link rel="stylesheet" href="public/css/inicio.css">
 </head>
 
 <body>
-    <header>
-        <h1>Juguetería Mágica</h1>
-        <nav>
-            <a href="listado_tabla.html">Tabla</a>
-            <a href="listado_box.html">Box</a>
-            <a href="producto.html">Producto</a>
-            <a href="comprar.html">Comprar</a>
-        </nav>
+    <header class="cabecera">
+        <div class="contenedor cabecera__contenido">
+            <h1 class="cabecera__titulo">Juguetería Mágica</h1>
+            <nav class="cabecera__navegacion">
+                <a href="index.html" class="cabecera__enlace">Inicio</a>
+                <a href="paginas/listado_tabla.html" class="cabecera__enlace">Tabla</a>
+                <a href="paginas/listado_box.html" class="cabecera__enlace">Cajas</a>
+                <a href="paginas/producto.html" class="cabecera__enlace">Producto</a>
+                <a href="paginas/comprar.html" class="cabecera__enlace">Comprar</a>
+            </nav>
+            <div class="controles-tema">
+                <button class="boton-tema" id="botonTema" aria-label="Cambiar tema">
+                    <span id="iconoTema">🌙</span>
+                </button>
+            </div>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Bienvenidos</h2>
-            <p>Descubrí los juguetes más divertidos y creativos para todas las edades.</p>
+
+    <main class="principal contenedor">
+        <section class="bienvenida">
+            <h2 class="bienvenida__titulo">Bienvenidos a la Juguetería Mágica</h2>
+            <p class="bienvenida__texto">
+                Descubrí los juguetes más divertidos y creativos para todas las edades.
+                Desde autos a control remoto hasta juegos educativos, tenemos todo para
+                hacer realidad los sueños de los más pequeños.
+            </p>
+        </section>
+
+        <section class="destacados">
+            <h2 class="principal__titulo">Nuestros Productos Destacados</h2>
+            <div class="destacados__grid">
+                
+            </div>
         </section>
     </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>&copy; 2024 Juguetería Mágica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="public/js/tema.js"></script>
+    <script src="public/js/main.js"></script>
 </body>
 
 </html>
